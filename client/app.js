@@ -4,6 +4,7 @@ function handleSubmit() {
 	$('#input').blur();
 	$('.error').remove();
 	$('.stackable').html('');
+<<<<<<< 29cbdb020a24ca2a1bc625e81fb353622dfb7c7c
 
 	$('.flex-container').append(`
 		<div class="ui active dimmer" id="loader">
@@ -17,6 +18,15 @@ function handleSubmit() {
     duration: 1000,
     viewFactor: 0.2,
   }, 300);
+=======
+	$('.container').append(`
+				<div class="ui active dimmer" id="loader">
+					<div class="ui text loader">Loading</div>
+				<p></p>
+			</div>
+			`);
+			window.sr = ScrollReveal();
+>>>>>>> Appending loading bar to container div
 
   var username = document.getElementById('input').value;
   username = username.slice(1);  
@@ -37,11 +47,15 @@ function handleSubmit() {
 
 		data.map(function(item) {
 
+<<<<<<< 29cbdb020a24ca2a1bc625e81fb353622dfb7c7c
 			 image 			 = item.imageURI;
 			 name 			 =  item.caption;
 			 description = item.the_Description;
 			 linkUrl  	 = item.modelQuickViewDetails.linkUrl;
 
+=======
+			 $('#loader').remove();
+>>>>>>> Appending loading bar to container div
 			 $('.stackable').append(`
 				  <a class="ui card" target="_blank" href=${linkUrl}>
 				 	 <div class="image">
